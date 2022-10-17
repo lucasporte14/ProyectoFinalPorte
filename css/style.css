@@ -118,7 +118,7 @@ img {
   padding: 10px 10px;
   font-size: 19px;
   margin-top: auto; }
-  .link :hover {
+  .link:hover {
     background-color: black;
     transition: 0.5s; }
 
