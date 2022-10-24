@@ -1,65 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FocalizarTe</title>
+    <title>Focalizarte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Gemunu+Libre:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Baloo+Bhai+2&family=Dancing+Script:wght@400;500&family=Exo+2:wght@200&family=Gemunu+Libre:wght@200&family=Montserrat+Alternates:wght@100;200;300&family=Nunito:ital,wght@1,200&family=PT+Sans&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 
 <body>
 
 <!--INICIO DE HEADER-->
     <header class="header">
-        <nav class="nav">
-            <a href="#" class="logo"><img src="img/Logo.png"></a>
-            <ul class="menu">
-                <li class="navegador"><a href=index.html class="link">Inicio</a></li>
-                <li class="navegador"><a href="Orientación vocacional.html" class="link">Orientación vocacional online</a></li>
-                <li class="navegador"><a href="Encontrá tu carrera.html" class="link">Encontrá tu carrera</a></li>
-                <li class="navegador"><a href="Noticias-novedades.html" class="link">Noticias-Novedades</a></li>
-                <li class="navegador"><a href="Contacto.html" class="link">Contacto</a></li>
-            </ul>
+        <nav class="nav navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="#" class="logo"><img src="img/Logo.png" alt="logo" src="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="menu">
+                        <li class="navegador"><a href="index.html" class="link">Inicio</a></li>
+                        <li class="navegador"><a href="Orientacion-vocacional.html" class="link">Orientación vocacional
+                                online</a></li>
+                        <li class="navegador"><a href="Encontra-tu-carrera.html" class="link">Encontrá tu carrera</a>
+                        </li>
+                        <li class="navegador"><a href="Noticias-novedades.html" class="link">Noticias-Novedades</a></li>
+                        <li class="navegador"><a href="Contacto.html" class="link">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 <!--FIN DE HEADER-->
 
     <br><br><br>
 
-    <p class="parrafocont"><b>Si tiene algun comentario, consulta o le interesa adquirir el servicio, no dude en ponerse en contacto</b></p>
-    
+    <p class="parrafocont"><b>Si tiene algun comentario, consulta o le interesa adquirir el servicio, no dude en ponerse
+            en contacto</b></p>
+
     <br>
 <!--INICIO DE FORMULARIO CON BT-->
-    <form>
+    <form class="container">
         <div class="mb-3">
-            <label for="nom" class="form-label">Nombre</label>
+            <label for="nom" class="form-label label">Nombre</label>
             <input type="text" class="form-control" id="ejnom" aria-describedby="nombh">
         </div>
         <div class="mb-3">
-          <label for="em" class="form-label">Email</label>
-          <input type="email" class="form-control" id="emm" aria-describedby="emailHelp">
+            <label for="em" class="form-label label">Email</label>
+            <input type="email" class="form-control" id="emm" aria-describedby="emailHelp">
         </div>
         <div class="mb-3">
-          <label for="num" class="form-label">Teléfono</label>
-          <input type="number" class="form-control" id="nume">
+            <label for="num" class="form-label label">Teléfono</label>
+            <input type="number" class="form-control" id="nume">
         </div>
         <div class="mb-3">
-            <label for="msj" class="form-label">Mensaje</label>
+            <label for="msj" class="form-label label">Mensaje</label>
             <input type="msms" class="form-control" id="msjs">
         </div>
         <div class="mb-3 form-check">
-        <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-light">Enviar</button>
         </div>
     </form>
 <!--FIN DE FORMULARIO CON BT-->
 
     <br><br>
 
-<!--INICIO DE FOOTER-->    
+<!--INICIO DE FOOTER-->
     <footer>
-        Derechos Reservados &copy; 2022 
+        Derechos Reservados &copy; 2022
         <br>
         Email: focalizar-te@gmail.com
         <br>
@@ -67,5 +85,8 @@
     </footer>
 <!--FIN DE FOOTER-->
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
